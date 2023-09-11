@@ -24,6 +24,7 @@ After going through the quick start guide, you'll have a better understanding of
 Once you have done the quick start, have a look at [the code](py_example.py) and [the sketch](sketch.png). In this example, Yahoo Finance is used as a dataset for price prediction. You can easily install the `yfinance` library, which provides a convenient way to access Yahoo Finance data, using pip:
 
 ```bash
+#This is before you run the code
 # Install yfinance for Yahoo Finance data
 pip install yfinance 
 # Install prophet to forecasting time series data
@@ -33,7 +34,7 @@ pip install pandas
 # Import matplotlib for plotting
 import matplotlib.pyplot as plt
 --------------------------------------------
-#Code explained here too
+#Code from py_example.py
 import pandas as pd
 from prophet import Prophet
 import yfinance as yf
