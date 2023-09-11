@@ -54,7 +54,7 @@ timestamps = pd.date_range(start=now, end=end_time, freq='1T')
 future = pd.DataFrame({'ds': timestamps})
 
 # Download historical data for Bitcoin (adjust as needed)
-data = yf.download('BTC-USD', period='1d', interval='1m')  # 7 days of 1-minute data for Bitcoin
+data = yf.download('BTC-USD', period='1d', interval='1m')  # 1 day of 1-minute data for Bitcoin
 
 # Prepare data for Prophet
 data = data.reset_index()  # Reset the index to access the 'ds' and 'y' columns
