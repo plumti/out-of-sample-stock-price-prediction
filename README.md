@@ -1,4 +1,4 @@
-# Out-of-Sample Price Prediction 
+# Out-of-Sample Stock Price Prediction 
 
 ![Alt Text](./sketch.png)
 
