@@ -1,5 +1,6 @@
 # out-of-sample-price-prediction-tutorial
 This is a small (python) example of using Facebook's open-source algorithm for generating time-series models, with a dataset from yahoo finance.
+![Alt Text](./sketch.png)
 
 # Out-of-Sample Price Prediction Tutorial
 
