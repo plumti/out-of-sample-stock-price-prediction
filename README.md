@@ -12,7 +12,7 @@ By following the steps below, you'll be able to understand the code and get star
 
 To begin, you'll need to install the Prophet library. You can find installation instructions for Prophet in the official documentation [here](https://facebook.github.io/prophet/docs/installation.html#python).
 
-Once you have Prophet installed, you're ready to get started!
+Once you have Prophet installed (assuming you have an IDE), you're ready to get started!
 
 ## Quick Start
 
