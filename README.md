@@ -31,5 +31,53 @@ python -m pip install prophet
 # For working with the datasets
 pip install pandas
 # Import matplotlib for plotting
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+--------------------------------------------
+#Code explained here too
+import pandas as pd
+from prophet import Prophet
+import yfinance as yf
+from datetime import datetime, timedelta
+import matplotlib.pyplot as plt  # Import matplotlib for plotting
+
+# Define the date and time for which you want to make predictions (current date and time)
+now = datetime.now()
+
+# Calculate the end time for predictions (100 minutes from now)
+end_time = now + timedelta(minutes=100)
+
+# Create a list of timestamps for the next 100 minutes at 1-minute intervals
+timestamps = pd.date_range(start=now, end=end_time, freq='1T')
+
+# Create a DataFrame with the timestamps
+future = pd.DataFrame({'ds': timestamps})
+
+# Download historical data for Bitcoin (adjust as needed)
+data = yf.download('BTC-USD', period='1d', interval='1m')  # 7 days of 1-minute data for Bitcoin
+
+# Prepare data for Prophet
+data = data.reset_index()  # Reset the index to access the 'ds' and 'y' columns
+data = data[['Datetime', 'Close']]  # Keep only 'Datetime' and 'Close' columns
+data.rename(columns={'Datetime': 'ds', 'Close': 'y'}, inplace=True)  # Rename columns to 'ds' and 'y'
+data['ds'] = data['ds'].dt.tz_localize(None)
+
+# Create and fit the Prophet model
+model = Prophet()
+model.fit(data)
+
+# Make predictions
+forecast = model.predict(future)
+
+# Visualize the forecast with custom settings
+fig = model.plot(forecast, xlabel='Date', ylabel='Price', figsize=(12, 6))
+plt.title('Bitcoin Price Forecast', fontsize=16)  # Update the title
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.legend(['Actual Price', 'Trend', 'Forecast', 'Uncertainty'], loc='upper left', fontsize=12)
+plt.tight_layout()
+plt.show()
+
+# Access the forecasted values
+forecasted_values = forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']]
+print(forecasted_values)
+
 
