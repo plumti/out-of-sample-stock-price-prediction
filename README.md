@@ -1,10 +1,12 @@
-# out-of-sample-price-prediction-tutorial
-This is a small (python) example of using Facebook's open-source algorithm for generating time-series models, with a dataset from yahoo finance.
-![Alt Text](./sketch.png)
-
 # Out-of-Sample Price Prediction Tutorial
 
-Welcome to the "Out-of-Sample Price Prediction Tutorial" repository! In this tutorial, we'll explore how to predict prices out of sample using machine learning techniques, with a focus on Facebook Prophet. By following the steps below, you'll be able to understand the code and get started with your price prediction project.
+![Alt Text](./sketch.png)
+
+Welcome to the "Out-of-Sample Price Prediction Tutorial" repository! In this tutorial, we'll explore how to predict prices out of sample using machine learning techniques, with a focus on Facebook Prophet. 
+
+**Disclaimer: This tutorial is for educational purposes only and should not be interpreted as trading advice. The provided code, timestamps, and datasets are used for visualization and experimentation purposes and may not represent a realistic trading model.**
+
+By following the steps below, you'll be able to understand the code and get started with your price prediction project.
 
 ## Installation
 
@@ -20,14 +22,12 @@ After going through the quick start guide, you'll have a better understanding of
 
 ## Understanding the Code
 
-In this tutorial, we'll be using Yahoo Finance as our dataset for price prediction. You can easily install the `yfinance` library, which provides a convenient way to access Yahoo Finance data, using pip:
+Once you have done the quick start, have a look at py_example, and sketch.png. In this example, we'll be using Yahoo Finance as our dataset for price prediction. You can easily install the `yfinance` library, which provides a convenient way to access Yahoo Finance data, using pip:
 
+```bash
 # Install yfinance for Yahoo Finance data
 pip install yfinance 
 # Install prophet to forecasting time series data
 python -m pip install prophet
 # For working with the datasets
 pip install pandas
-
-
-
