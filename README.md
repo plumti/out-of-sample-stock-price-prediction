@@ -81,5 +81,5 @@ print(forecasted_values)
 ```
 ## Not accurate enough?
 If you think these predictions aren't precise enough, try adjust the timestamp and dataset settings. 
-Alternatively consider using another machine learning library - I recommend [scikit learn] (https://scikit-learn.org/stable/)
+Alternatively consider using another machine learning library - I recommend [scikit learn] (https://scikit-learn.org/stable/).
 
