@@ -30,3 +30,6 @@ pip install yfinance
 python -m pip install prophet
 # For working with the datasets
 pip install pandas
+# Import matplotlib for plotting
+import matplotlib.pyplot as plt 
+
