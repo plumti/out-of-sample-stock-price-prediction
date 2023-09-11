@@ -21,8 +21,7 @@ Prophet provides a quick start guide that will help you familiarize yourself wit
 After going through the quick start guide, you'll have a better understanding of how Prophet works and how to use it for time series forecasting.
 
 ## Understanding the Code
-
-Once you have done the quick start, have a look at py_example, and sketch.png. In this example, we'll be using Yahoo Finance as our dataset for price prediction. You can easily install the `yfinance` library, which provides a convenient way to access Yahoo Finance data, using pip:
+Once you have done the quick start, have a look at [the code](path_to_your_code_file.py) and [sketch.png](path_to_your_image.png). In this example, we'll be using Yahoo Finance as our dataset for price prediction. You can easily install the `yfinance` library, which provides a convenient way to access Yahoo Finance data, using pip:
 
 ```bash
 # Install yfinance for Yahoo Finance data
