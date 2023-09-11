@@ -21,10 +21,12 @@ After going through the quick start guide, you'll have a better understanding of
 
 In this tutorial, we'll be using Yahoo Finance as our dataset for price prediction. You can easily install the `yfinance` library, which provides a convenient way to access Yahoo Finance data, using pip:
 
-(terminal commands used)
-(for yahoo data) pip install yfinance 
-(for the forecasting) python -m pip install prophet
-(for working with the datasets) pip install pandas
+# Install yfinance for Yahoo Finance data
+pip install yfinance 
+# Install prophet to forecasting time series data
+python -m pip install prophet
+# For working with the datasets
+pip install pandas
 
 
 
