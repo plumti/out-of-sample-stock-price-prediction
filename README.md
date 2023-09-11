@@ -1,8 +1,8 @@
-# Out-of-Sample Price Prediction Tutorial
+# Out-of-Sample Price Prediction 
 
 ![Alt Text](./sketch.png)
 
-Welcome to the "Out-of-Sample Price Prediction Tutorial" repository! In this tutorial, we'll explore how to predict prices out of sample using machine learning techniques, with a focus on Facebook Prophet. 
+ This is an example of how to predict stock prices out of sample using machine learning techniques, using Facebook Prophet. 
 
 **Disclaimer: This tutorial is for educational purposes only and should not be interpreted as trading advice. The provided code, timestamps, and datasets are used for visualization and experimentation purposes and may not represent a realistic trading model.**
 
