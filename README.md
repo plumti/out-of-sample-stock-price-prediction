@@ -80,10 +80,10 @@ forecasted_values = forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']]
 print(forecasted_values)
 ```
 # Here is another more recent example with the same time cycle and frequency:
-![Click here](./other_example)
+![Click here](./other_example.png)
 
 # Here is another more recent example with different time cycles and frequency (records data for 5 days, every 2 minutes) :
-![Click here](./other_example_2)
+![Click here](./other_example_2.png)
 
 ## Not accurate enough?
 If you think these predictions aren't precise enough, try adjust the timestamp and dataset settings. 
